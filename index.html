@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Interactif Élégant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="page-dice" class="active">
+        <h1>Lancer le dé</h1>
+        <div id="dice-container">
+            <div id="dice" class="face-1">
+                <span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span>
+            </div>
+        </div>
+        <button id="roll-button" class="main-btn">Lancer !</button>
+        <button class="nav-btn" onclick="showPage('page-timer')">Vers le Sablier →</button>
+    </section>
+
+    <section id="page-timer">
+        <h1>Le Sablier</h1>
+        <div class="glass-card">
+            <div id="hourglass">⏳</div>
+            <div id="time-display">03:00</div>
+        </div>
+        <div class="controls">
+            <button id="timer-button" class="main-btn">Démarrer</button>
+            <button id="reset-button" class="secondary-btn">Reset</button>
+        </div>
+        <button class="nav-btn" onclick="showPage('page-dice')">← Retour au Dé</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
